@@ -5,16 +5,16 @@ LEVEL 1
 -------------------------------------------------------------------------------
 - [ ] co najmniej 3 komponenty
 - [ ] poprawne rozdzielenie widoku i logiki
-- [ ] zastosowanie języka stylów innego niż CSS (np. SCSS)
-- [ ] zastosowanie biblioteki "CSS" (Bootstrap, Material itp.)
-- [ ] aktywne (!) korzystanie z VCS
+- [x] zastosowanie języka stylów innego niż CSS (np. SCSS)
+- [x] zastosowanie biblioteki "CSS" (Bootstrap, Material itp.)
+- [x] aktywne (!) korzystanie z VCS
 
 -------------------------------------------------------------------------------
 LEVEL 2
 -------------------------------------------------------------------------------
 (+ LEVEL 1)
 - [ ] więcej komponentów i (sensowny) podział na co najmniej 2 moduły
-- [ ] zastosowanie ikon (np. FontAwesome)
+- [x] zastosowanie ikon (np. FontAwesome)
 - [ ] zastosowanie routera i nawigacji
 - [ ] połączenie z zewnętrznym API dostarczającym dane za pomocą serwisów
 - [ ] zaimplementowanie i wykorzystanie tzw. pipes do formatowania danych w widoku
