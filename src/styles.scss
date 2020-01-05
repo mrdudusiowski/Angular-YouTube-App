@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color:#212529;
+$font:'Lato', sans-serif;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #dca8a8;
+  font-family: $font;
+  height: 100vh;
+  // background:url('./assets/weather.png');
+}
+
+/* Navbar style */
+.navbar{
+background-color: #ff5151 !important;
+
+}
+
+.nav-link{
+  color: white !important;
+  font-family: $font;
+}
+
+.icon-menu{
+  margin-right: 5px;
+}
+
+/* Footer style */
+footer{
+  width: 100%;
+  background-color: #ff5151;
+  display: block;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 14px;
+}
+
+.copirights{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
