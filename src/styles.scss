@@ -12,8 +12,6 @@ body {
 body {
   background-color: #dca8a8;
   font-family: $font;
-  height: 100vh;
-  // background:url('./assets/weather.png');
 }
 
 /* Navbar style */
@@ -37,10 +35,10 @@ footer{
   background-color: #ff5151;
   display: block;
   bottom: 0;
-  position: absolute;
   text-align: center;
   margin: 0 auto;
   padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .copirights{
