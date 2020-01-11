@@ -10,9 +10,9 @@
         <a class="nav-link" [routerLink]="['../main']" href="#"><i class="fas fa-home icon-menu"></i>{{ 'menu.home' | translate}}<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-chart-bar icon-menu"></i>Stats</a>
+        <a class="nav-link" href="#"><i class="fas fa-chart-bar icon-menu"></i>{{ 'menu.charts' | translate}}</a>
       </li>
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
@@ -22,9 +22,12 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope icon-menu"></i>{{ 'menu.upload' | translate}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-envelope icon-menu"></i>Contact</a>
+        <a class="nav-link" href="#"><i class="fas fa-envelope icon-menu"></i>{{ 'menu.contact' | translate}}</a>
       </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">

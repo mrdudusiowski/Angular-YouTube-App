@@ -1,12 +1,10 @@
 {
     "menu": {
         "home": "Home",
-        "set": "Settings",
-        "map":"Map",
-        "for":"Forecasting",
-        "com":"Compass & Geo",
-        "air":"Air quality",
-        "alerts":"Local Alerts"
+        "table": "Table",
+        "charts":"Charts",
+		"upload": "Upload",
+        "contact":"Contact",
     },
     "main":{
         "header":{

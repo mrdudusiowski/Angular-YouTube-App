@@ -1,12 +1,10 @@
 {
     "menu": {
         "home": "Strona główna",
-        "set": "Ustawienia",
-        "map":"Mapa",
-        "for":"Prognoza",
-        "com":"Kompass",
-        "air":"Jakość powietrza",
-        "alerts":"Lokalne alamy"
+        "table": "Tabelka",
+        "charts":"Wykresy",
+		"upload": "Wrzuć plik",
+        "contact":"Kontakt"
     },
     "main":{
         "header":{
