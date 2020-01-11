@@ -52,6 +52,7 @@
     width:93%;
     height: 75%;
     border-radius:3px;
+    padding: 33px;
   }
   
   .button {
@@ -104,6 +105,35 @@
     transform: translatex(-2);
     transition:1s;
     cursor:pointer;
+  }
+
+  .youtube-info{
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .youtube-avatar{
+    height: 80px;
+    width: 80px;
+    float: left;
+    background-color: yellow;
+  }
+  .yt-name{
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+  .sub-count{
+    float: left;
+    color: black;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
   }
 
   /*Main*/

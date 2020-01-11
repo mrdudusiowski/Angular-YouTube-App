@@ -1,8 +1,17 @@
 <div class="row">
     <div class="col-md-8 col-sm-12">
-      <h2>Hi! Insert below your fovourite Youtuber URL!
+      <h2>Hi! Insert below your fovourite Youtuber Channel ID!
       </h2>
       <h5>After that go on other tabs!</h5>
+      <div class="input-group mb-3">
+        <input #ytID type="text" class="form-control" placeholder="Insert YouTube URL" aria-label="Insert YouTube URL" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button (click)="saveID(ytID.value)" class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+        </div>
+      </div>
+      <h2>Or insert Channel Name!
+      </h2>
+      <h5>It doesn't metter what you choose!</h5>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Insert YouTube URL" aria-label="Insert YouTube URL" aria-describedby="button-addon2">
         <div class="input-group-append">
@@ -11,30 +20,30 @@
       </div>
       <div class="card-deck">
         <div class="card">
-          <img src="{{avatar}}" class="card-img-top" alt="...">
+          <img src="{{avatarPewDiePie}}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">{{namePewDiePie}}</h5>
+            <p class="card-text">{{descriptionPewDiePie}}</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{{avatarKuba}}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">{{nameKuba}}</h5>
+            <p class="card-text">{{descriptionKuba}}</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{{avatarTVN}}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5 class="card-title">{{nameTVN}}</h5>
+            <p class="card-text">{{descriptionTVN}}</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -43,15 +52,20 @@
       </div>
     </div>
     <div class="col-md-4 col-sm-12">
-        <div class="phone">
+        <div class="phone animated shake delay-5s">
             <div class="speaker"></div>
             <div class="camera"></div>
             <div class="sensor"></div>
             
             
             <div class="screen">
-               <!-- Here will be content from API -->
-               Hello world!
+               <div *ngIf="inserted" class="youtube-info">
+                 <div class= "youtube-avatar">
+                   <img src="{{avatar}}" style="width: 80px; height: 80;">
+                 </div>
+                 <div class="yt-name">{{name}}</div>
+                 <div class="sub-count">{{subcount}}</div>
+               </div>
             </div>
             
             <div class="button"></div>
