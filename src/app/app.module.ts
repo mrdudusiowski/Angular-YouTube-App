@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { YoutubeApiService } from './youtube-api.service';
+import { MainCardsModule } from './main-cards/main-cards.module';
 
 const appRouter=[
   {
@@ -32,9 +34,10 @@ const appRouter=[
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
       }
-  })
+  }),
+  MainCardsModule
   ],
-  providers: [],
+  providers: [YoutubeApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

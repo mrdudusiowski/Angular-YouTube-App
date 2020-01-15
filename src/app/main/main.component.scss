@@ -52,7 +52,7 @@
     width:93%;
     height: 75%;
     border-radius:3px;
-    padding: 33px;
+    padding-top: 50px;
   }
   
   .button {
@@ -109,7 +109,9 @@
 
   .youtube-info{
     height: 80px;
-    width: 200px;
+    width: 92%;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: white;
     display: block;
     overflow: hidden;
@@ -121,18 +123,21 @@
     float: left;
     background-color: yellow;
   }
+  .info-block{
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+  }
   .yt-name{
     color: black;
-    font-size: 20px;
-    font-weight: 900;
-    margin-left: 15px;
-    margin-bottom: 5px;
+    font-size: 21px;
+    font-weight: 900;;
+    margin-bottom: 2px;
+    margin-top: 8px;
   }
   .sub-count{
-    float: left;
     color: black;
-    margin-left: 15px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
   }
 

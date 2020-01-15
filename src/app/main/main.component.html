@@ -13,43 +13,12 @@
       </h2>
       <h5>It doesn't metter what you choose!</h5>
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Insert YouTube URL" aria-label="Insert YouTube URL" aria-describedby="button-addon2">
+        <input #ytName type="text" class="form-control" placeholder="Insert YouTube URL" aria-label="Insert YouTube URL" aria-describedby="button-addon2">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+          <button (click)="saveName(ytName.value)" class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
         </div>
       </div>
-      <div class="card-deck">
-        <div class="card">
-          <img src="{{avatarPewDiePie}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{namePewDiePie}}</h5>
-            <p class="card-text">{{descriptionPewDiePie}}</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="{{avatarKuba}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{nameKuba}}</h5>
-            <p class="card-text">{{descriptionKuba}}</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="{{avatarTVN}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{nameTVN}}</h5>
-            <p class="card-text">{{descriptionTVN}}</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
+        <app-main-cards></app-main-cards>
     </div>
     <div class="col-md-4 col-sm-12">
         <div class="phone animated shake delay-5s">
@@ -63,8 +32,10 @@
                  <div class= "youtube-avatar">
                    <img src="{{avatar}}" style="width: 80px; height: 80;">
                  </div>
-                 <div class="yt-name">{{name}}</div>
-                 <div class="sub-count">{{subcount}}</div>
+                 <div class="info-block">
+                  <div class="yt-name">{{name}}</div>
+                  <div class="sub-count">{{subcount}}</div>
+                </div>
                </div>
             </div>
             
