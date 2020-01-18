@@ -3,7 +3,7 @@
 -------------------------------------------------------------------------------
 LEVEL 1
 -------------------------------------------------------------------------------
-- [ ] co najmniej 3 komponenty
+- [x] co najmniej 3 komponenty
 - [x] poprawne rozdzielenie widoku i logiki
 - [x] zastosowanie języka stylów innego niż CSS (np. SCSS)
 - [x] zastosowanie biblioteki "CSS" (Bootstrap, Material itp.)
@@ -20,18 +20,18 @@ LEVEL 2
 - [ ] zaimplementowanie i wykorzystanie tzw. pipes do formatowania danych w widoku
 - [ ] wykorzystanie gotowych modułów do wyświetlenia danych w postaci interaktywnej
   tabeli (możliwość sortowania, filtrowania itp.) 
-- [ ] wprowadzenie okienka typu modal do potwierdzenia operacji (np. usunięcia)
+- [x] wprowadzenie okienka typu modal do potwierdzenia operacji (np. usunięcia)
 
 -------------------------------------------------------------------------------
 LEVEL3
 -------------------------------------------------------------------------------
 (+ LEVEL 2)
 - [ ] wprowadzenie jakiejś formy wizualizacji danych (wykresy, grafy, mapy itp.)
-- [ ] wprowadzenie formularza z walidacją pól
-- [ ] zastosowanie mechanizmu lokalnego składowania danych (LocalStorage lub 
+- [x] wprowadzenie formularza z walidacją pól
+- [x] zastosowanie mechanizmu lokalnego składowania danych (LocalStorage lub 
   SessionStorage)
 - [x] zaimplementowanie co najmniej jednej dyrektywy *ngif *ngfor
-- [ ] samodzielne zastosowanie Promise lub Observable Observable=component->subscribe()
+- [x] samodzielne zastosowanie Promise lub Observable Observable=component->subscribe()
 - [ ] zrealizowanie uploadu plików z drag&drop i paskiem postępu
 - [x] wykorzystanie ngx-translate do internacjonalizacji [link](https://github.com/ngx-translate/core)
 - [ ] zaimplementowanie zestawu podstawowych testów komponentów (więcej niż daje 
