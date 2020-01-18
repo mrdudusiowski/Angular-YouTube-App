@@ -12,7 +12,9 @@ import { MainCardsModule } from './main/main-cards/main-cards.module';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { MapComponent} from './contact-form/map/map.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UploadFilesComponent } from './upload-files/upload-files.component';
+import {UploadModule} from './upload/upload.module';
+import {UploadComponent} from './upload/upload.component';
+import {ProgressComponent} from './upload/progress/progress.component';
 
 const appRouter=[
   {
@@ -25,7 +27,7 @@ const appRouter=[
     path:'contact',component: ContactFormComponent
   },
   {
-    path:'upload',component: UploadFilesComponent
+    path:'upload',component: UploadComponent
   }
 ];
 @NgModule({
@@ -33,8 +35,7 @@ const appRouter=[
     AppComponent,
     MainComponent,
     ContactFormComponent,
-    MapComponent,
-    UploadFilesComponent
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +51,8 @@ const appRouter=[
   }),
   MainCardsModule,
   FormsModule,
-  ReactiveFormsModule
+  UploadModule,
+  ReactiveFormsModule,
   ],
   providers: [YoutubeApiService],
   bootstrap: [AppComponent]

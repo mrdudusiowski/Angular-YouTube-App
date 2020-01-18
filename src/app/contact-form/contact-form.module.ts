@@ -9,8 +9,6 @@ import { MapComponent } from './map/map.component';
   declarations: [ContactFormComponent, MapComponent],
   imports: [
     CommonModule,
-    ContactFormComponent,
-    MapComponent
   ],
   exports: [
     ContactFormComponent,

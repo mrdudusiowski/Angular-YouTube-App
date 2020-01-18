@@ -38,5 +38,10 @@
 		},
 		"title": "Skontakuj się ze mną!",
 		"description": "Masz jakieś pytania odnośnie aplikacji? Skontakuj się ze mną za pomocą poniższego formularza albo pisz bezpośrednio pod adres e-mail podany poniżej"
+	},
+	"upload":{
+		"title":"Przeciągnij tutaj pliki",
+		"title2":"lub",
+		"title3":"Przeglądaj pliki"
 	}
 }

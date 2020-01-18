@@ -37,6 +37,11 @@
 			"button2":"Send!"
 		},
 		"title": "Contact with me!",
-		"description": "Do you have any application uses? Contact me using the form below or enter the e-mail address provided below.",
+		"description": "Do you have any application uses? Contact me using the form below or enter the e-mail address provided below."
+	},
+	"upload":{
+		"title":"Drag and drop file here",
+		"title2":"or",
+		"title3":"Browse for file"
 	}
 }
