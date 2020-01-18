@@ -7,89 +7,36 @@
         "contact":"Contact",
     },
     "main":{
-        "header":{
-            "title":"Fair Weather",
-            "desc1":"Always have",
-            "desc2":"the weather forecast checked!",
-            "btn":"Check!",
-            "phone":"Fair Weather!"
-        },
-        "city":"City:",
-        "country":"Country:",
-        "tmp":"Temperature:",
-        "map":"See on the map!",
-        "stg":"Settings",
-        "time":"API time:",
-        "press":"Pressure:",
-        "winds":"Wind speed:",
-        "windd":"Wind direction:",
-        "hum":"Humidity:",
-        "cloud":"Clouds:",
-        "rain":"Rain:",
-        "snow":"Snow:",
-        "uv":"UV:",
-        "aqi":"Air Quality Index:"
+		"title1":"Hi! Insert below your fovourite Youtuber Channel ID!",
+        "desc1":"After that go on other tabs!",
+		"title2":"Or insert Channel Name!",
+        "desc2":"It doesn't metter what you choose!",
+		"input1":"Insert Youtube channel ID",
+		"input2":"Insert Youtube channel name",
+		"buttonSend": "Send"
     },
-    "setting":{
-        "call":"Calls remaining to Weather API:",
-        "country":{
-            "exa":"Examples:",
-            "paris":"Paris",
-            "rome":"Rome",
-            "war":"Warsaw",
-            "madr":"Madrit",
-            "ny":"NY",
-            "lon":"London",
-            "msc":"Moscow",
-            "berl":"Berlin"
-        },
-        "enter":"Enter city and country code!",
-        "use":"Use english naming!",
-        "city":"City",
-        "code":"Country code:",
-        "see":"See all countries:",
-        "save":"Save"
-    },
-    "map":{
-        "leg":"Legend:",
-        "circle":"Circle - weather radius distance",
-        "arrow":"Arrow - Wind direction",
-        "mark":"Mark - City"
-    },
-    "forecast":{
-        "chance":"The chance of rainfall within 30-120 min is",
-        "small":"0-25 - none | 25-45 - small | 45-55 - medium | 55-75 - large | 75-100 - very high",
-        "title":"Long term forcast weather 16 days",
-        "btn":"Toggle table to edit",
-        "table":{
-            "date":"Date",
-            "icon":"Icon",
-            "max":"Max temp",
-            "min":"Min temp",
-            "winds":"Wind spd",
-            "pop":"Pop",
-            "rain":"Rain",
-            "snow":"Snow",
-            "press":"Pressure",
-            "hum":"Humidity",
-            "cloud":"Clouds"
-        },
-        "char":"Weather 16-days charts"
-    },
-    "compass":{
-        "title":"Under construction 👍"
-    },
-    "air":{
-        "title":"Air Quality Index",
-        "avg":"Average AQI:",
-        "date":"Date:",
-        "china":"China Indicies:",
-        "usa":"USA Indicies:",
-        "main":"Main Pollutant:",
-        "indi":"Indicies: <br> 0-50 Excelent;<br> 51-100 Good;<br> 101-150 Lightly Polluted (Unhealthy for Sensitive Groups);<br> 151-200 Moderately Polluted (Unhealthy);<br> 201-300 Heavily Polluted (Very Unhealthy);<br> >300 Severely Polluted (Hazardous)",
-        "poll":"Pollutant: <br> p2 = pm.2.5[µg/m3];<br> p1 = pm10[µg/m3];<br> o3 = Ozone O3 [ppb];<br> n2 = Nitrogen dioxide NO2 [ppb];<br> s2 = Sulfur dioxide SO2 [ppb];<br> co = Carbon monoxide CO [ppm]"
-    },
-    "alert":{
-        "title":"Allerts for your region:"
-    }
+    "contact":{
+		"form":{
+			"name":"Your name",
+			"email":"Your email",
+			"subject": "Subject",
+			"message": "Your message",
+			"buttonSend": "Send!"
+		},
+		"error":{
+			"name":"Name is required!",
+			"email1":"Email is required!",
+			"email2":"Email is invalid!",
+			"subject":"Subject is required!",
+			"message":"Message is required!"
+		},
+		"modal":{
+			"title":"Are you sure?",
+			"desc":"When you click send, you can't change anything! Buhahah!",
+			"button1":"Fallback!",
+			"button2":"Send!"
+		},
+		"title": "Contact with me!",
+		"description": "Do you have any application uses? Contact me using the form below or enter the e-mail address provided below.",
+	}
 }

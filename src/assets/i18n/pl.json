@@ -7,89 +7,36 @@
         "contact":"Kontakt"
     },
     "main":{
-        "header":{
-            "title":"Prawdziwa pogoda",
-            "desc1":"Zawsze sprawdzaj",
-            "desc2":"progonozę pogody!",
-            "btn":"Sprawdź!",
-            "phone":"Prawdziwa pogoda!"
-        },
-        "city":"Miasto:",
-        "country":"Kraj:",
-        "tmp":"Temperatura:",
-        "map":"Zobacz na mapie!",
-        "stg":"Ustawienia",
-        "time":"Czas API:",
-        "press":"Ciśnienie:",
-        "winds":"Prędkość wiatru:",
-        "windd":"Kierunek wiatru:",
-        "hum":"Wilgotność:",
-        "cloud":"Zachmurzenie:",
-        "rain":"Deszcz:",
-        "snow":"Śnig:",
-        "uv":"UV:",
-        "aqi":"Wskaźnik jakości powietrza:"
+        "title1":"Hej! Wrzuć poniżej ID Kanału swojego ulubionego YouTubera!",
+        "desc1":"Po tym sprawdź inne karty!",
+		"title2":"Lub wpisz nazwę kanału!",
+        "desc2":"Nie ma znaczenia jaki wybierzesz!",
+		"input1":"Wpisz ID kanału Youtube ",
+		"input2":"Wpisz nazwę kanału Youtube",
+		"buttonSend": "Wyślij"
     },
-    "setting":{
-        "call":"Pozostała ilość odwołań do API:",
-        "country":{
-            "exa":"Przykładowe miasta:",
-            "paris":"Paryż",
-            "rome":"Rzym",
-            "war":"Warszawa",
-            "madr":"Madryt",
-            "ny":"NY",
-            "lon":"Londyn",
-            "msc":"Moskwa",
-            "berl":"Berlin"
-        },
-        "enter":"Wpisz miasto i skrót kraju!",
-        "use":"Używaj anielskich nazw!",
-        "city":"Miasto",
-        "code":"Skrót kraju:",
-        "see":"Zobacz wszystkie kraje:",
-        "save":"Zapisz"
-    },
-    "map":{
-        "leg":"Legenda:",
-        "circle":"Okrąg - maksymalny dystans sprawdzania pogody",
-        "arrow":"Strzłka - kierunek wiatru",
-        "mark":"Znacznik - miasto"
-    },
-    "forecast":{
-        "chance":"Szansa opadów w ciągu 30-120 min wynosi",
-        "small":"0-25 - żadne | 25-45 - małe | 45-55 - średnie | 55-75 - duże | 75-100 - b.duże",
-        "title":"Długoterminowa prognoza pogody na 16 dni",
-        "btn":"Przełącz na widok do edycji",
-        "table":{
-            "date":"Data",
-            "icon":"Ikona",
-            "max":"Max temp",
-            "min":"Min temp",
-            "winds":"Prędkośc wiatru",
-            "pop":"Pop",
-            "rain":"Deszcz",
-            "snow":"Śnieg",
-            "press":"Ciśnienie",
-            "hum":"Wilgotność",
-            "cloud":"Zachm."
-        },
-        "char":"Wykresu pogody na 16 dni"
-    },
-    "compass":{
-        "title":"W budowie 👍"
-    },
-    "air":{
-        "title":"Wskaźnik jakości powietrza",
-        "avg":"Średni wskaźnik:",
-        "date":"Data:",
-        "china":"Wskaźnik chiński :",
-        "usa":"Wskaźnik USA:",
-        "main":"Główne zanieczyszczenie:",
-        "indi":"Jakość: <br> 0-50 Doskonała;<br> 51-100 Dobra;<br> 101-150 Lekkie zanieczyszczenie (Niezdrowy dla wrażliwych grup);<br> 151-200 Umiarkowanie Zanieczyszczone (Niezdrowe);<br> 201-300 Mocno zanieczyszczone (bardzo niezdrowe);<br> >300 Poważnie zanieczyszczone (niebezpieczne)",
-        "poll":"Zanieczyszczenie: <br> p2 = pm.2.5[µg/m3];<br> p1 = pm10[µg/m3];<br> o3 = Ozon O3 [ppb];<br> n2 = Dwutlenek azotu NO2 [ppb];<br> s2 = Dwutlenek siarki [ppb];<br> co = Tlenek węgla CO [ppm]"
-    },
-    "alert":{
-        "title":"Alarmy pogodowe dla twojego regionu:"
-    }
+	"contact":{
+		"form":{
+			"name":"Twoje imię",
+			"email":"Twój adres e-mail",
+			"subject": "Temat wiadomości",
+			"message": "Twoja wiadomość",
+			"buttonSend": "Wyślij!"
+		},
+		"error":{
+			"name":"Imie jest wymagane!",
+			"email1":"Email jest wymagany!",
+			"email2":"Niepoprawny adres Email!",
+			"subject":"Temat jest wymagany!",
+			"message":"Wiadomość jest wymagana"
+		},	
+		"modal":{
+			"title":"Czy jesteś pewien?",
+			"desc":"Po wysłaniu wiadomości nie możesz nic zmienić! Buhahah!",
+			"button1":"Cofamy!",
+			"button2":"Wysyłaj!"
+		},
+		"title": "Skontakuj się ze mną!",
+		"description": "Masz jakieś pytania odnośnie aplikacji? Skontakuj się ze mną za pomocą poniższego formularza albo pisz bezpośrednio pod adres e-mail podany poniżej"
+	}
 }

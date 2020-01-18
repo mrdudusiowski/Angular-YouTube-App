@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { YoutubeApiService } from '../../youtube-api.service';
+import {YoutubeApiService} from '../../../youtube-api.service'
 
 @Component({
-  selector: 'app-pewdie-channel',
-  templateUrl: './pewdie-channel.component.html',
-  styleUrls: ['../main-cards.component.scss']
+  selector: 'app-kuba-channel',
+  templateUrl: './kuba-channel.component.html',
+  styleUrls: ['../main-cards.component.scss'],
 })
-export class PewdieChannelComponent implements OnInit {
+export class KubaChannelComponent implements OnInit {
   avatar;
   description;
   name;
@@ -19,7 +19,7 @@ export class PewdieChannelComponent implements OnInit {
 
   ngOnInit() {
 
-    let id = "UC-lHJZR3Gqxm24_Vd_AJ5Yw"
+    let id = "UCLr4hMhk_2KE0GUBSBrspGA"
     try{
       this._youtube_api.getChannelInfoByID(id).subscribe((response)=>{ //Przekazanie ChannelID
         if(response==null) this.error="Error, There is no channel, or ID is invalid!";  //Error

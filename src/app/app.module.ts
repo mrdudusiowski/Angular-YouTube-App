@@ -8,7 +8,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { YoutubeApiService } from './youtube-api.service';
-import { MainCardsModule } from './main-cards/main-cards.module';
+import { MainCardsModule } from './main/main-cards/main-cards.module';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { MapComponent} from './contact-form/map/map.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UploadFilesComponent } from './upload-files/upload-files.component';
 
 const appRouter=[
   {
@@ -17,11 +21,20 @@ const appRouter=[
   {
       path:'main',component:MainComponent
   },
+  {
+    path:'contact',component: ContactFormComponent
+  },
+  {
+    path:'upload',component: UploadFilesComponent
+  }
 ];
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    ContactFormComponent,
+    MapComponent,
+    UploadFilesComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +46,11 @@ const appRouter=[
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
-      }
+      },
   }),
-  MainCardsModule
+  MainCardsModule,
+  FormsModule,
+  ReactiveFormsModule
   ],
   providers: [YoutubeApiService],
   bootstrap: [AppComponent]

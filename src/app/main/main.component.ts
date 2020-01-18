@@ -62,22 +62,6 @@ saveName(channelName: string){
  ngOnInit() {
      let value=localStorage.getItem('youtuberID');
      let channelID=JSON.parse(value);
-    /*
-      Get your channels info and get JSON from API   
-      
-    */
-
-    
-   //PewDiePie info from API
-   this.getPewDiePie();
-
-   //Kuba Klawier info from API 
-   this.getKubaKlawier();
-
-   //TVNTurbo info from API 
-   this.getTVNTurbo();
-
-
 
     if(this.channelInfo != null || this.channelInfo != ""){
       try{
@@ -97,71 +81,4 @@ saveName(channelName: string){
     }
 }
 
-//PewDiePie
-avatarPewDiePie: any;
-descriptionPewDiePie: any;
-namePewDiePie: any;
-idPewDiePie: any;
-
-getPewDiePie(){
-   //PewDiePie info from API
-   this.idPewDiePie = "UC-lHJZR3Gqxm24_Vd_AJ5Yw"
-    try{
-      this._youtube_api.getChannelInfoByID(this.idPewDiePie).subscribe((response)=>{ //Przekazanie ChannelID
-        if(response==null) this.error="Error, There is no channel, or ID is invalid!";  //Error
-        else{ //Pobranie JSON
-        this.avatarPewDiePie = response["items"]["0"]["snippet"]["thumbnails"]["high"]["url"]; //Pobranie avatara JSON
-        this.namePewDiePie = response["items"]["0"]["snippet"]["title"];
-        this.descriptionPewDiePie = response["items"]["0"]["snippet"]["description"];
-        }
-      });
-    } catch(error){
-      this.error="Error, There is no channel, or ID is invalid!";
-    }
-}
-
-//Kuba Klawier
-avatarKuba: any;
-descriptionKuba: any;
-nameKuba: any;
-idKuba: any;
-
-getKubaKlawier(){
-  try{
-    this.idKuba="UCLr4hMhk_2KE0GUBSBrspGA";
-    this._youtube_api.getChannelInfoByID(this.idKuba).subscribe((response)=>{ //Przekazanie ChannelID
-      if(response==null) this.error="Error, There is no channel, or ID is invalid!";  //Error
-      else{//Pobranie JSON
-      this.avatarKuba = response["items"]["0"]["snippet"]["thumbnails"]["high"]["url"]; //Pobranie avatara JSON
-      this.nameKuba = response["items"]["0"]["snippet"]["title"];
-      this.descriptionKuba = response["items"]["0"]["snippet"]["description"];
-      }
-    });
-  } catch(error){
-    this.error="Error, There is no channel, or ID is invalid!";
-  }
-}
-
-//TVN Turbo
-avatarTVN: any;
-descriptionTVN: any;
-nameTVN: any;
-idTVN: any;
-
-getTVNTurbo(){
-  try{
-    this.idTVN="UCfsSoUSQzUimrjKhAKmshDQ";
-    this._youtube_api.getChannelInfoByID(this.idTVN).subscribe((response)=>{ //Przekazanie ChannelID
-      if(response==null) this.error="Error, There is no channel, or ID is invalid!";  //Error
-      else{ //Pobranie JSON
-      this.avatarTVN = response["items"]["0"]["snippet"]["thumbnails"]["high"]["url"]; //Pobranie avatara JSON
-      this.nameTVN = response["items"]["0"]["snippet"]["title"];
-      this.descriptionTVN = response["items"]["0"]["snippet"]["description"];
-    }
-    });
-  } catch(error){
-    //await this.handleError(error);
-    this.error="Error, There is no channel, or ID is invalid!";
-  }
-}
 }

@@ -1,21 +1,20 @@
 <div class="row">
     <div class="col-md-8 col-sm-12">
-      <h2>Hi! Insert below your fovourite Youtuber Channel ID!
-      </h2>
-      <h5>After that go on other tabs!</h5>
+      <h2>{{ 'main.title1' | translate}}</h2>
+      <h5>{{ 'main.desc1' | translate}}</h5>
       <div class="input-group mb-3">
-        <input #ytID type="text" class="form-control" placeholder="Insert YouTube URL" aria-label="Insert YouTube URL" aria-describedby="button-addon2">
+        <input #ytID type="text" class="form-control" placeholder="{{ 'main.input1' | translate}}" aria-label="Insert YouTube ChannelID" aria-describedby="button-addon2">
         <div class="input-group-append">
-          <button (click)="saveID(ytID.value)" class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+          <button (click)="saveID(ytID.value)" class="btn btn-outline-secondary" type="button" id="button-addon2">{{ 'main.buttonSend' | translate}}</button>
         </div>
       </div>
-      <h2>Or insert Channel Name!
+      <h2>{{ 'main.title2' | translate}}
       </h2>
-      <h5>It doesn't metter what you choose!</h5>
+      <h5>{{ 'main.desc2' | translate}}</h5>
       <div class="input-group mb-3">
-        <input #ytName type="text" class="form-control" placeholder="Insert YouTube URL" aria-label="Insert YouTube URL" aria-describedby="button-addon2">
+        <input #ytName type="text" class="form-control" placeholder="{{ 'main.input2' | translate}}" aria-label="Insert YouTube Channel Name" aria-describedby="button-addon2">
         <div class="input-group-append">
-          <button (click)="saveName(ytName.value)" class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+          <button (click)="saveName(ytName.value)" class="btn btn-outline-secondary" type="button" id="button-addon2">{{ 'main.buttonSend' | translate}}</button>
         </div>
       </div>
         <app-main-cards></app-main-cards>

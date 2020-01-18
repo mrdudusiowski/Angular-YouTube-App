@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { YoutubeApiService } from '../../youtube-api.service';
+import { YoutubeApiService } from '../../../youtube-api.service';
 
 @Component({
-  selector: 'app-tvn-channel',
-  templateUrl: './tvn-channel.component.html',
+  selector: 'app-pewdie-channel',
+  templateUrl: './pewdie-channel.component.html',
   styleUrls: ['../main-cards.component.scss']
 })
-export class TvnChannelComponent implements OnInit {
+export class PewdieChannelComponent implements OnInit {
   avatar;
   description;
   name;
@@ -19,7 +19,7 @@ export class TvnChannelComponent implements OnInit {
 
   ngOnInit() {
 
-    let id = "UCfsSoUSQzUimrjKhAKmshDQ"
+    let id = "UC-lHJZR3Gqxm24_Vd_AJ5Yw"
     try{
       this._youtube_api.getChannelInfoByID(id).subscribe((response)=>{ //Przekazanie ChannelID
         if(response==null) this.error="Error, There is no channel, or ID is invalid!";  //Error
@@ -34,4 +34,5 @@ export class TvnChannelComponent implements OnInit {
     }
 
   }
+
 }
