@@ -13,7 +13,7 @@ LEVEL 1
 LEVEL 2
 -------------------------------------------------------------------------------
 (+ LEVEL 1)
-- [ ] więcej komponentów i (sensowny) podział na co najmniej 2 moduły
+- [x] więcej komponentów i (sensowny) podział na co najmniej 2 moduły
 - [x] zastosowanie ikon (np. FontAwesome)
 - [x] zastosowanie routera i nawigacji
 - [x] połączenie z zewnętrznym API dostarczającym dane za pomocą serwisów
@@ -32,7 +32,7 @@ LEVEL3
   SessionStorage)
 - [x] zaimplementowanie co najmniej jednej dyrektywy *ngif *ngfor
 - [x] samodzielne zastosowanie Promise lub Observable Observable=component->subscribe()
-- [ ] zrealizowanie uploadu plików z drag&drop i paskiem postępu
+- [x] zrealizowanie uploadu plików z drag&drop i paskiem postępu
 - [x] wykorzystanie ngx-translate do internacjonalizacji [link](https://github.com/ngx-translate/core)
 - [ ] zaimplementowanie zestawu podstawowych testów komponentów (więcej niż daje 
   generator ;)
