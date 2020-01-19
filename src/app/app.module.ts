@@ -15,6 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {UploadModule} from './upload/upload.module';
 import {UploadComponent} from './upload/upload.component';
 import {ProgressComponent} from './upload/progress/progress.component';
+import {ChartsModule} from './charts/charts.module';
+import { ChartsComponent } from './charts/charts.component';
+
 
 const appRouter=[
   {
@@ -28,7 +31,10 @@ const appRouter=[
   },
   {
     path:'upload',component: UploadComponent
-  }
+  },
+  {
+    path:'charts',component: ChartsComponent
+  },
 ];
 @NgModule({
   declarations: [
@@ -53,6 +59,7 @@ const appRouter=[
   FormsModule,
   UploadModule,
   ReactiveFormsModule,
+  ChartsModule
   ],
   providers: [YoutubeApiService],
   bootstrap: [AppComponent]

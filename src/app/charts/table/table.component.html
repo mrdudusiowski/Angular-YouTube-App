@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col" sortable="name" (sort)="onSort($event)">Name</th>
+      <th scope="col" sortable="subs" (sort)="onSort($event)">Subs</th>
+      <th scope="col" sortable="views" (sort)="onSort($event)">Views</th>
+      <th scope="col" sortable="country" (sort)="onSort($event)">Country</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let youtuber of youtubers">
+      <th scope="row">{{ youtuber.id }}</th>
+      <td>{{ youtuber.name}}</td>
+      <td>{{ youtuber.subs | number }}</td>
+      <td>{{ youtuber.views | number }}</td>
+      <td>
+        <img src="../../../assets/flags/{{youtuber.country}}.png" class="mr-2" style="width: 20px">
+      </td>
+    </tr>
+    </tbody>
+</table>
