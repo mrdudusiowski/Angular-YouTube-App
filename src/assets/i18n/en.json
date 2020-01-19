@@ -1,10 +1,9 @@
 {
     "menu": {
         "home": "Home",
-        "table": "Table",
         "charts":"Charts",
 		"upload": "Upload",
-        "contact":"Contact",
+        "contact":"Contact"
     },
     "main":{
 		"title1":"Hi! Insert below your fovourite Youtuber Channel ID!",
@@ -13,7 +12,9 @@
         "desc2":"It doesn't metter what you choose!",
 		"input1":"Insert Youtube channel ID",
 		"input2":"Insert Youtube channel name",
-		"buttonSend": "Send"
+		"buttonSend": "Send",
+		"createDate": "Create date: ",
+		"country": "Country: "
     },
     "contact":{
 		"form":{

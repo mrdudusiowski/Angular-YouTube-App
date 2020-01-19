@@ -1,7 +1,6 @@
 {
     "menu": {
         "home": "Strona główna",
-        "table": "Tabelka",
         "charts":"Wykresy",
 		"upload": "Wrzuć plik",
         "contact":"Kontakt"
@@ -13,7 +12,9 @@
         "desc2":"Nie ma znaczenia jaki wybierzesz!",
 		"input1":"Wpisz ID kanału Youtube ",
 		"input2":"Wpisz nazwę kanału Youtube",
-		"buttonSend": "Wyślij"
+		"buttonSend": "Wyślij",
+		"createDate": "Data utworzenia: ",
+		"country": "Kraj: "
     },
 	"contact":{
 		"form":{

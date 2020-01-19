@@ -34,8 +34,14 @@
                  <div class="info-block">
                   <div class="yt-name">{{name}}</div>
                   <div class="sub-count">{{subcount}}</div>
-                </div>
+                 </div>
                </div>
+               <div *ngIf="inserted" class="informations-special">
+                <br>
+                {{'main.createDate' | translate}} {{date | date: 'ww-LLLL-yyyy'}}
+                <br>
+                {{'main.country' | translate}} <img src="../../assets/flags/{{countryCode | lowercase}}.png"  style="width: 50px;"/>
+              </div>
             </div>
             
             <div class="button"></div>

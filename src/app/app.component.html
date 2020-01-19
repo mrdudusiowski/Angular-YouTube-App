@@ -27,9 +27,6 @@
         <a class="nav-link" [routerLink]="['../upload']" href="#"><i class="fas fa-upload icon-menu"></i>{{ 'menu.upload' | translate}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['../table']" href="#"><i class="fas fa-table icon-menu"></i>{{ 'menu.table' | translate}}</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" [routerLink]="['../contact']" href="#"><i class="fas fa-envelope icon-menu"></i>{{ 'menu.contact' | translate}}</a>
       </li>
     </ul>
@@ -38,6 +35,10 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form> -->
   </div>
+  <form class="form-inline my-2 my-lg-0">
+    <img (click)="useLanguage('pl')" src="../assets/flags/pl.png" style="width: 50px; margin-right: 5px;">
+    <img (click)="useLanguage('en')" src="../assets/flags/gb-eng.png" style="width: 50px;">
+  </form>
 </nav>
 <div class="container">
 <router-outlet></router-outlet>

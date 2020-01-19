@@ -13,14 +13,14 @@ export class MainComponent implements OnInit {
   error:any; 
   channelInfo: any;
   value: any;
-  x;
-
 
   avatar: any;
   name: any;
   subcount: any;
   channelID: any;
   channelName: any;
+  date: Date;
+  countryCode: any;
 
   inserted: boolean;
 
@@ -34,12 +34,14 @@ export class MainComponent implements OnInit {
         if(response==null) this.error="Error, There is no channel, or ID is invalid!";  //Error
         else{ let snippet = response["items"]["0"]["snippet"]; //Pobranie JSON
               let statistics = response["items"]["0"]["statistics"]
-
+              console.log(response);
         this.avatar = snippet["thumbnails"]["high"]["url"]; //Pobranie avatara JSON
         this.name = snippet["title"];
         this.subcount = statistics["subscriberCount"];
         this.inserted=true;
-        
+        let date= snippet["publishedAt"];
+        this.date = new Date(date);
+        this.countryCode = snippet["country"];
         localStorage.setItem("youtuberID", JSON.stringify(channelID));
       }
       });
@@ -52,7 +54,7 @@ saveName(channelName: string){
   this._youtube_api.getChannelID(channelName).subscribe((response: Response)=>{ //Przekazanie ChannelID
     if(response==null) this.error="Error, no informations!";  //Error
     else { 
-      console.log(response["items"]["0"]["id"]);
+  
       this.channelID = response["items"]["0"]["id"];
       this.saveID(this.channelID);
     }
@@ -73,6 +75,10 @@ saveName(channelName: string){
           this.name = response["snippet"]["title"];
           this.subcount = response["statistics"]["subscriberCount"];
           this.inserted=true;
+          let date= response["snippet"]["publishedAt"];
+          this.date = new Date(date);
+          console.log(response["snippet"]["country"]);
+          this.countryCode =  response["snippet"]["country"];
         }
         });
       } catch(error){
