@@ -17,8 +17,8 @@ LEVEL 2
 - [x] zastosowanie ikon (np. FontAwesome)
 - [x] zastosowanie routera i nawigacji
 - [x] połączenie z zewnętrznym API dostarczającym dane za pomocą serwisów
-- [ ] zaimplementowanie i wykorzystanie tzw. pipes do formatowania danych w widoku
-- [ ] wykorzystanie gotowych modułów do wyświetlenia danych w postaci interaktywnej
+- [x] zaimplementowanie i wykorzystanie tzw. pipes do formatowania danych w widoku
+- [x] wykorzystanie gotowych modułów do wyświetlenia danych w postaci interaktywnej
   tabeli (możliwość sortowania, filtrowania itp.) 
 - [x] wprowadzenie okienka typu modal do potwierdzenia operacji (np. usunięcia)
 
@@ -26,7 +26,7 @@ LEVEL 2
 LEVEL3
 -------------------------------------------------------------------------------
 (+ LEVEL 2)
-- [ ] wprowadzenie jakiejś formy wizualizacji danych (wykresy, grafy, mapy itp.)
+- [x] wprowadzenie jakiejś formy wizualizacji danych (wykresy, grafy, mapy itp.)
 - [x] wprowadzenie formularza z walidacją pól
 - [x] zastosowanie mechanizmu lokalnego składowania danych (LocalStorage lub 
   SessionStorage)
