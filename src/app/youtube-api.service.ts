@@ -10,7 +10,7 @@ import { Observable, of, Subject } from 'rxjs';
 export class YoutubeApiService {
   channelInfoByID = "https://www.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics&id=";
   channelChannelIDInfo = "https://www.googleapis.com/youtube/v3/channels?part=id&forUsername="
-  API_KEY = "AIzaSyD69125P66Ki46g0fLue8b3YQrBvur_wAI";
+  API_KEY = "";
 
   constructor(private http:HttpClient) { }
 
